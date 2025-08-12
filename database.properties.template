@@ -1,0 +1,32 @@
+# Database Configuration Template
+# Copy this file to database.properties and update with your actual credentials
+# database.properties is already included in .gitignore for security
+
+# Database Connection Settings
+db.url=jdbc:mysql://localhost:3306/foodie_db?useSSL=false&serverTimezone=UTC
+db.username=your_mysql_username
+db.password=your_mysql_password
+
+# Connection Pool Settings (optional)
+db.maxConnections=10
+db.connectionTimeout=30000
+
+# Application Settings
+app.name=Foodie Express
+app.version=1.0.0
+app.environment=development
+
+# Security Settings (for future implementation)
+security.password.salt=your_random_salt_here
+security.session.timeout=1800
+
+# Email Configuration (for future implementation)
+email.smtp.host=smtp.gmail.com
+email.smtp.port=587
+email.username=your_email@example.com
+email.password=your_email_password
+
+# Payment Gateway Configuration (for future implementation)
+payment.gateway.url=https://sandbox.paymentgateway.com
+payment.gateway.key=your_payment_gateway_key
+payment.gateway.secret=your_payment_gateway_secret
